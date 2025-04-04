@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Currículo - Douglas Reis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #fff0f0, #fff6f6);
+            color: #2c1e1e;
+        }
+
+        .card {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(80, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        .perfil {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .foto {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #a83232;
+        }
+
+        .info h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #a83232;
+        }
+
+        .info p {
+            margin: 6px 0;
+            color: #4e2a2a;
+        }
+
+        .links a {
+            margin-right: 10px;
+            color: #a83232;
+            font-size: 1.4rem;
+            transition: color 0.3s;
+        }
+
+        .links a:hover {
+            color: #7a1f1f;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        section h2 {
+            color: #a83232;
+            border-bottom: 2px solid #f9d6d6;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .periodo {
+            float: right;
+            font-weight: normal;
+            color: #a67c7c;
+        }
+
+        .skills {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+
+        .skills li {
+            background-color: #f7cccc;
+            color: #7a1f1f;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .botao-download {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .botao-download a {
+            background: linear-gradient(135deg, #c0392b, #e74c3c);
+            color: #fff;
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .botao-download a:hover {
+            background: linear-gradient(135deg, #a93226, #c0392b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(192, 57, 43, 0.4);
+        }
+
+        .botao-download i {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <header class="perfil">
+            <img src="IMG_0107.jpg" alt="IMG_0107" class="foto">
+            <div class="info">
+                <h1>Douglas Reis</h1>
+                <p><i class="fas fa-envelope"></i> dsreis1995@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (21) 99759-1221</p>
+                <p class="links">
+                    <a href="https://www.linkedin.com/in/douglas-reis-56289235a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/dsreis1995" target="_blank"><i class="fab fa-github"></i></a>
+                </p>
+            </div>
+        </header>
+
+        <div class="botao-download">
+            <a href="curriculo.pdf" download>
+                <i class="fas fa-download"></i> Baixar PDF
+            </a>
+        </div>
+
+        <section>
+            <h2>Resumo</h2>
+            <p>Desenvolvedor em formação com foco em html e css. Em busca da primeira oportunidade na área para aplicar e expandir meus conhecimentos.</p>
+        </section>
+
+        <section>
+            <h2>Experiência</h2>
+            <div class="item">
+                <p><strong>Linguagens:</strong>  HTML, CSS, JavaScript</p>
+                <p><strong>Cargo:</strong> Desenvolvedor Front-end</p>
+                <p>Responsável por criar interfaces modernas com foco em usabilidade.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formação</h2>
+            <div class="item">
+                <p><strong>Desenvolvimento Web</strong> - Formação Autodidata</p>
+                <p>Estudos contínuos através de plataformas como YouTube, Google, documentação oficial e comunidades online.</p>
+                <p><strong>Período:</strong>  2025</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <ul class="skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
